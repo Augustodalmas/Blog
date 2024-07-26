@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    {% extends "base.html" %}
+    {% load static %}
+    {% block content %}
+
+<body>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Postagem de Notícias -->
+                {% if postagem %}
+                    {% for post in postagem %}
+                        {% if post.publicado %}
+                        <article class="mb-4">
+                            <h2>{{ post.titulo }}</h2>
+                            <p class="text-muted">{{ post.criado_em}}</p>
+                            <p>{{ post.conteudo|slice:":200" }}{% if post.conteudo|length > 200 %}...</p>{% else %} <br><br> {% endif %}
+                            <a href="{% url 'detalhaPostagem' post.pk %}" class="btn btn-primary">Leia mais</a>
+                        </article>
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    <h1>Não temos postagens no momento</h1>
+                {% endif %}
+                <!-- Paginação -->
+                <nav aria-label="Page navigation example" class="mt-4">
+                    <ul class="pagination">
+                        {% if page_obj.has_previous %}
+                            <li class="page-item"><a class="page-link" href="?page=1">&laquo; Primeira</a></li>
+                            <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">Anterior</a></li>
+                        {% else %}
+                            <li class="page-item disabled"><span class="page-link">&laquo; Primeira</span></li>
+                            <li class="page-item disabled"><span class="page-link">Anterior</span></li>
+                        {% endif %}
+            
+                        {% for num in page_obj.paginator.page_range %}
+                            {% if page_obj.number == num %}
+                                <li class="page-item active"><span class="page-link">{{ num }}</span></li>
+                            {% elif num > page_obj.number|add:-3 and num < page_obj.number|add:3 %}
+                                <li class="page-item"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+            
+                        {% if page_obj.has_next %}
+                            <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">Próxima</a></li>
+                            <li class="page-item"><a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Última &raquo;</a></li>
+                        {% else %}
+                            <li class="page-item disabled"><span class="page-link">Próxima</span></li>
+                            <li class="page-item disabled"><span class="page-link">Última &raquo;</span></li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+            <!-- Barra Lateral --> 
+            <div class="col-md-4">
+                <aside>
+                    {% if user.is_authenticated %}
+                    <h3>Gostaria de criar um Post?</h3>
+                    <p>Mande seu post para nossa moderação aprovar e lançar em nosso blog.</p>
+                    <div class="grid-buttons">
+                        <a class="btn btn-primary" href="{% url 'criarPostagem' %}" role="button">Criar postagem</a>
+                    </div>
+                    {% endif %}
+                </aside>
+            </div>
+        </div>
+    </main>
+    {% endblock %}
+</body>
+</html>

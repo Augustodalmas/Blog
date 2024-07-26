@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    {% extends "base.html" %}
+    {% load static %}
+    {% block content %}
+<body>
+    <!-- Conteúdo Principal -->
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="Input1" class="form-label">Titulo da noticia</label>
+            {{ form.titulo }}
+          </div>
+          <div class="mb-2">
+            <label for="Textarea1" class="form-label">Conteúdo</label>
+            {{ form.conteudo }}
+          </div>
+          <button class="btn btn-primary" type="submit">Criar Postagem</button>
+     </form>
+     {% endblock %}
+</body>
+</html>

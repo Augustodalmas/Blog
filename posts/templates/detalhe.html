@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    {% extends "base.html" %}
+    {% load static %}
+    {% block content %}
+<body>
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Detalhes da Notícia -->
+                <article class="mb-4">
+                    <h2>{{ postagem.titulo }}</h2>
+                    <p class="text-muted">{{ postagem.criado_em}}</p>
+                    <p>{{ postagem.conteudo|linebreaks|safe }}</p>
+                </article>
+
+                <!-- Seção de Comentários -->
+                <section id="comments" class="mb-4">
+                    <h3>Comentários</h3>
+
+                    <!-- Lista de Comentários -->
+                    <div id="comment-list" class="list-group">
+                        {% for coment in comentarios %}
+                            <div class="list-group-item">
+                                <h5 class="mb-1">{{ coment.autor }}</h5>
+                                <p class="mb-1">{{ coment.comentario }}</p>
+                                <small>{{ coment.criado_em }}</small>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                </section>
+            </div>
+            <!-- Barra Lateral --> 
+            <div class="col-md-4">
+                <aside>
+                    {% if user.is_authenticated %}
+                    <p>Para deixar um comentário nesse post, certifique-se de estar logado e clique em "Criar Comentário".</p>
+                    <div class="grid-buttons">
+                        <a class="btn btn-primary" href="{% url 'criarComentario' postagem.pk %}" role="button">Criar Comentário</a>
+                    </div>
+                    {% endif %}
+                </aside>
+            </div>
+        </div>
+    </main>
+    {% endblock %}
+</body>
+</html>

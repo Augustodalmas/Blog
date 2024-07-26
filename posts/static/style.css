@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+article {
+    background-color: #ffffffdd;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+article h2 {
+    color: #333;
+    font-size: 26px;
+}
+
+article p.text-muted {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 0; /* Coloca o footer abaixo do conteúdo principal */
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.grid-buttons-user{
+    display: flex;
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: #000000d6 !important;
+}
+
+.btn-info {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #00000000;
+    --bs-btn-border-color: #00000000;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #00000000;
+    --bs-btn-hover-border-color: #00000000;
+    --bs-btn-focus-shadow-rgb: #00000000;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #00000000;
+    --bs-btn-active-border-color: #00000000;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #00000000;
+    --bs-btn-disabled-border-color: #00000000;
+}
+
+.btn-info.focus, .btn-info:focus {
+    color: #fff;
+    background-color: #00000000;
+    border-color: #00000000;
+    box-shadow: 0 0 0 .2rem #00000000;
+}
+
+.no-posts-spacing {
+    height: 50%; /* ajuste a altura conforme necessário */
+}
+
+.fixed{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
