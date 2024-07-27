@@ -130,49 +130,4 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-JAZZMIN_SETTINGS = {
-    "site_title": "Meu Admin",
-    "site_header": "Administração",
-    "welcome_sign": "Bem-vindo ao painel de administração",
-    "show_sidebar": True,
-    "navigation_expanded": True,
-    "topmenu_links": [
-        {"name": "Home", "url": "admin:index", "permissions": ["auth.view_user"]},
-        {"app": "auth"},
-    ],
-    "usermenu_links": [
-        {"name": "Suporte", "url": "https://example.com/suporte", "new_window": True},
-    ],
-    "icons": {
-        "auth": "fas fa-users-cog",
-        "auth.user": "fas fa-user",
-        "auth.Group": "fas fa-users",
-    },
-    "order_with_respect_to": ["auth", "auth.user", "auth.Group"],
-    "show_ui_builder": False,
-}
-
-JAZZMIN_UI_TWEAKS = {
-    "theme": "cosmo",
-    "dark_mode_theme": "cyborg",
-    "navbar": "navbar-dark bg-primary",
-    "sidebar": "sidebar-dark-primary",
-    "brand_color": "navbar-dark bg-primary",
-    "accent": "accent-primary",
-    "navbar_small_text": False,
-    "footer_small_text": False,
-    "body_small_text": False,
-    "brand_small_text": False,
-    "sidebar_nav_small_text": False,
-    "sidebar_disable_expand": False,
-    "sidebar_nav_child_indent": True,
-    "sidebar_nav_compact_style": False,
-    "sidebar_nav_legacy_style": False,
-    "sidebar_nav_flat_style": False,
-    "theme_light": "cerulean",
-    "dark_mode": False,
-}
-
 LOGIN_REDIRECT_URL = '/lista'
-
-#CKEDITOR_UPLOAD_PATH = "uploads/"
