@@ -22,11 +22,11 @@
                     <!-- Lista de Comentários -->
                     <div id="comment-list" class="list-group">
                         {% for coment in comentarios %}
-                            <div class="list-group-item">
-                                <h5 class="mb-1">{{ coment.autor }}</h5>
-                                <p class="mb-1">{{ coment.comentario }}</p>
-                                <small>{{ coment.criado_em }}</small>
-                            </div>
+                        <div class="list-group-item mb-3 p-3 border rounded bg-light">
+                            <h5 class="mb-1">{{ coment.autor }}</h5>
+                            <p class="comment-text">{{ coment.comentario }}</p>
+                            <small>{{ coment.criado_em }}</small>
+                        </div>
                         {% endfor %}
                     </div>
 

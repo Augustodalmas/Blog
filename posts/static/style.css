@@ -83,3 +83,7 @@ header a:hover{
     bottom: 0;
     width: 100%;
 }
+.comment-text {
+    max-width: 800px; /* Ajuste conforme necessário */
+    overflow-wrap: break-word; /* Quebra palavras longas */
+}
