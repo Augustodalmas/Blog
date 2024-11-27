@@ -1,9 +1,8 @@
-Sobre o Projeto
-Este é um aplicativo web de blog desenvolvido com Django. O sistema permite que os usuários gerenciem postagens por meio de um CRUD completo (Criar, Ler, Atualizar e Deletar). Além disso, os leitores podem interagir deixando comentários nas postagens. O projeto é ideal para aprendizado e implementação de funcionalidades essenciais de um sistema de blog.
+Este é um aplicativo web de blog desenvolvido com Django. 
+O sistema permite que os usuários gerenciem postagens por meio de um CRUD completo (Criar, Ler, Atualizar e Deletar). Além disso, os leitores podem interagir deixando comentários nas postagens. O projeto é ideal para aprendizado e implementação de funcionalidades essenciais de um sistema de blog.
 
-Funcionalidades
+<b>Funcionalidades</b>
 CRUD de Postagens
-
 Criar novas postagens com título, conteúdo e tags.
 Listar todas as postagens com exibição de título e resumo.
 Editar o conteúdo de postagens existentes.
