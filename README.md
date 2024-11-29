@@ -1,20 +1,20 @@
-📝 BlogApp: Um Aplicativo Web de Blog com Django<br>
+📝 BlogApp: Um Aplicativo Web de Blog com Django<br><br>
 Este projeto é um aplicativo web de blog desenvolvido com o framework Django. Ele oferece funcionalidades completas para gerenciamento de postagens e interação com leitores por meio de comentários. Ideal para quem deseja aprender ou implementar as funcionalidades essenciais de um sistema de blog.<br>
 
 🌟 Funcionalidades Principais<br><br>
-📋 CRUD de Postagens<br>
+📋 CRUD de Postagens<br><br>
 Criar: Adicione novas postagens com título, conteúdo e tags.<br>
 Listar: Visualize todas as postagens com exibição de título e resumo.<br>
 Editar: Atualize o conteúdo de postagens existentes.<br>
 Excluir: Remova postagens quando necessário.<br>
-💬 Sistema de Comentários<br>
+💬 Sistema de Comentários<br><br>
 Interação: Leitores podem comentar nas postagens.<br>
 Moderação: Administradores podem aprovar ou rejeitar comentários.<br>
 Autenticação: Apenas usuários logados podem comentar.<br>
-🔐 Sistema de Autenticação<br>
+🔐 Sistema de Autenticação<br><br>
 Postagens: Usuários autenticados podem criar e editar postagens.<br>
 Comentários: Exclusivo para usuários logados.<br><br>
-🛠️ Tecnologias Utilizadas<br>
+🛠️ Tecnologias Utilizadas<br><br>
 Linguagem de Programação: Python<br>
 Backend: Django<br>
 Banco de Dados: SQLite (com suporte a PostgreSQL ou MySQL)<br>
