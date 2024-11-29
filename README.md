@@ -20,7 +20,6 @@ Backend: Django<br>
 Banco de Dados: SQLite (com suporte a PostgreSQL ou MySQL)<br>
 Frontend: HTML, CSS e Bootstrap<br>
 Gerenciamento: Django Admin<br>
-
 Como Utilizar 🚀<br>
 1️⃣ Clone o Repositório:<br>
 ```git clone https://github.com/Augustodalmas/Blog```
