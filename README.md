@@ -22,16 +22,18 @@ Frontend: HTML, CSS e Bootstrap<br>
 Gerenciamento: Django Admin<br>
 
 Como Utilizar 🚀<br>
-Clone o Repositório:<br>
+1️⃣ Clone o Repositório:<br>
 ```git clone https://github.com/Augustodalmas/Blog```
 
-Certifique-se de ter o Python e Django instalados. Em seguida, instale as dependências:<br>
+2️⃣ Instale as Dependências:<br>
 ```pip install -r requirements.txt```
 
-Execute as Migrações:<br>
+3️⃣ Execute as Migrações:<br>
 ```python manage.py migrate```
 
-Inicie o Servidor Django:<br>
+4️⃣ Inicie o Servidor Django:<br>
 ```python manage.py runserver```
 
-Procure pela URL: /Lista
+🌐 Acesse o Aplicativo
+Abra o navegador e navegue para:
+http://127.0.0.1:8000/Lista
