@@ -1,5 +1,5 @@
 <h1>📝 BlogApp: Um Aplicativo Web de Blog com Django</h1>
-Este projeto é um aplicativo web de blog desenvolvido com o framework Django. Ele oferece funcionalidades completas para gerenciamento de postagens e interação com leitores por meio de comentários. Ideal para quem deseja aprender ou implementar as funcionalidades essenciais de um sistema de blog.
+Este projeto é um aplicativo web de blog desenvolvido com o framework Django. Ele oferece funcionalidades completas para gerenciamento de postagens e interação com leitores por meio de comentários. Ideal para quem deseja aprender ou implementar as funcionalidades essenciais de um sistema de blog.<br>
 
 🌟 Funcionalidades Principais<br>
 📋 CRUD de Postagens<br>
