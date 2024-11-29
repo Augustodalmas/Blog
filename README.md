@@ -13,13 +13,13 @@ Moderação: Administradores podem aprovar ou rejeitar comentários.<br>
 Autenticação: Apenas usuários logados podem comentar.<br><br>
 🔐 Sistema de Autenticação<br>
 Postagens: Usuários autenticados podem criar e editar postagens.<br>
-Comentários: Exclusivo para usuários logados.<br><br><br>
+Comentários: Exclusivo para usuários logados.<br><br>
 🛠️ Tecnologias Utilizadas<br>
 Linguagem de Programação: Python<br>
 Backend: Django<br>
 Banco de Dados: SQLite (com suporte a PostgreSQL ou MySQL)<br>
 Frontend: HTML, CSS e Bootstrap<br>
-Gerenciamento: Django Admin<br>
+Gerenciamento: Django Admin<br><br>
 Como Utilizar 🚀<br>
 1️⃣ Clone o Repositório:<br>
 ```git clone https://github.com/Augustodalmas/Blog```
