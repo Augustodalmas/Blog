@@ -24,7 +24,7 @@ Outros: Django Admin para gerenciamento</br>
 
 Como Utilizar 🚀<br>
 Clone o Repositório:<br>
-```git clone https://github.com/seu-usuario/django-genres-api.git```
+```git clone https://github.com/Augustodalmas/Blog```
 
 Certifique-se de ter o Python e Django instalados. Em seguida, instale as dependências:<br>
 ```pip install -r requirements.txt```
@@ -34,3 +34,5 @@ Execute as Migrações:<br>
 
 Inicie o Servidor Django:<br>
 ```python manage.py runserver```
+
+Procure pela URL: /Lista
